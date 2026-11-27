@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP 02 - API - Blagues</title>
+
+    <!-- Librairie CSS : Bulma (choix expliqué dans le README) -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
+</head>
+
+<body>
+    <section class="section">
+        <div class="container">
+
+            <h1 class="title has-text-centered">Blagues en français </h1>
+            <h2 class="subtitle has-text-centered">TP 02 - Requêter une API distante avec Fetch</h2>
+
+            <!-- Formulaire avec un simple bouton -->
+            <form id="formulaire" class="box has-text-centered">
+                <button type="submit" id="bouton-blague" class="button is-primary is-medium">
+                    Afficher une blague
+                </button>
+            </form>
+
+            <!-- Tableau des résultats -->
+            <table class="table is-striped is-hoverable is-fullwidth">
+                <thead>
+                    <tr>
+                        <th>Catégorie</th>
+                        <th>Blague</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="corps-tableau">
+                    <!-- Les blagues seront ajoutées ici par le JavaScript -->
+                </tbody>
+            </table>
+
+            <!-- Bouton pour vider le tableau en entier -->
+            <button type="button" id="bouton-vider" class="button is-danger">
+                Vider le tableau
+            </button>
+
+        </div>
+    </section>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
